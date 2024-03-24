@@ -13,11 +13,9 @@ services:
   pysonet_db:
     image: postgres:12.2-alpine
     volumes:
-     - pysonet_postgres_data:/var/lib/postgresql/data/
-    environment:
-     - POSTGRES_USER=django_user
-     - POSTGRES_PASSWORD=django_pass
-     - POSTGRES_DB=postgres
+      - pysonet_postgres_data:/var/lib/postgresql/data/
+    env_file:
+      - ./.env.dev
 
 volumes:
   pysonet_postgres_data:
