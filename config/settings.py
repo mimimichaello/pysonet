@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     "profiles",
     "rest_framework",
     "djoser",
+    "drf_yasg",
+    "corsheaders",
 ]
 
 MIDDLEWARE = [
@@ -151,3 +153,11 @@ SIMPLE_JWT = {
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 AUTH_USER_MODEL = "profiles.UserNet"
+
+CORS_ALLOWED_ORIGINS = [
+    "https://localhost:8080",
+    "https://localhost:8081",
+    "http://127.0.0.1:8000",
+    "http://127.0.0.1:1313",
+    "http://localhost:1313",
+]
