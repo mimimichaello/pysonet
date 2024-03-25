@@ -161,3 +161,4 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:1313",
     "http://localhost:1313",
 ]
+
