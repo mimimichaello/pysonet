@@ -14,10 +14,10 @@ class UserNetPublicView(ModelViewSet):
 
 
 class UserNetView(ModelViewSet):
-    """Вывод профиля пользователя"""
+    """Вывод профиля пользователя в profile"""
 
     serializer_class = GetUserNetSerializer
     permission_classes = [permissions.IsAuthenticated]
 
     def get_queryset(self):
-        return UserNet.objects.filter(id=self.request.user.id)
+        return UserNet.objects.filter(id=self.request.user.id) 
