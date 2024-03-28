@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     "profiles",
     "wall",
     "comments",
+    "followers",
     "rest_framework",
     "djoser",
     "drf_yasg",
